@@ -1,0 +1,52 @@
+
+1 Inicio
+
+2 funcion principal()
+3 tipo, i[0-n] 
+4 salida, i[0-n]
+5 mensaje, x(100)[{a-z}, {A-Z}, {0-9}, {BS}]
+6 haga hasta
+7 << "Ingrese 1 para ingresar autos. Ingrese 2 para ingresar motos."
+8 >> tipo
+9 Si(tipo == 1) entonces
+10  mensaje = funcion ingresarAutos()
+11  << mensaje
+12 De lo contrario
+13    Si(tipo == 2) entonces
+14	mensaje = funcion ingresarMotos()
+15	<< mensaje
+16    De lo contrario
+17	<< "valor incorrecto"
+18 Fin_Si
+19 << "Ingrese 0 para salir. Cualquier otro carácter para continuar."
+20 >> salida
+21 Haga hasta(salida == 0)
+22 fin funcion principal
+
+23 funcion ingresarAutos():x
+24  cadena, x(50)[{a-z}, {A-Z}, {0-9}, {BS}]
+25  marca, x(50)[{a-z}, {A-Z}, {0-9}, {BS}]
+26  año, x(50)[{a-z}, {A-Z}, {0-9}, {BS}]
+27  cadena <-- ""
+28  << "Ingrese la marca del vehículo"
+29  >> marca
+30  << "Ingrese el año de fabricación"
+31  >> año
+32  cadena = cadena + "Auto marca " marca + " con año de fabricación "+ año
+33  retornar cadena
+34 fin funcion ingresarAutos()
+
+35 funcion ingresarMotos():x
+36  cadena, x(50)[{a-z}, {A-Z}, {0-9}, {BS}]
+37  motor, x(50)[{a-z}, {A-Z}, {0-9}, {BS}]
+38  asientos, x(50)[{a-z}, {A-Z}, {0-9}, {BS}]
+39  cadena <-- ""
+40  << "Ingrese el tipo de motor de la moto"
+41  >> motor
+42  << "Ingrese la cantidad de asientos"
+43  >> asientos
+44  cadena = cadena + "Moto con motor " motor + " y "+ asientos + " asientos."
+45  retornar cadena
+46 fin funcion ingresarMotos
+
+47 Fin
