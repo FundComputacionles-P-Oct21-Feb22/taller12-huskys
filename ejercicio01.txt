@@ -1,0 +1,28 @@
+/*
+Dados los siguientes arreglos
+Recorrer los mismos desde un método principal. 
+En cada iteración se debe llamar a un procedimiento que 
+reciba 3 parámetros (generarInformacion). 
+El procedimiento debe realizar la siguiente operación.
+m = (a**2 + b ** 2) + a*c
+El valor de m es ? y los valores usados par la operación son: ? , ?, ?
+*/
+
+1 Inicio
+2 funcion principal()
+3 arreglo1(4), i[0-n] <-- {1, 2, 5, 6}
+4 arreglo2(4), i[0-n] <-- {9, 8, 7, 1}
+5 arreglo3(4), i[0-n] <-- {10, 18, 17, 10}
+6 Para (i<--0, i<4, i++) haga
+7  obtenerOperacion(arreglo1[i], arreglo2[i], arreglo3[i])
+8 Fin_Para
+9 fin funcion principal
+
+9 funcion obtenerOperacion(a, i; b, i; c, i)
+10  m, i[0-n]
+11  m = (a**2 + b ** 2) + a*c
+12 << "El valor de m es " + m + " y los valores usados para la operación son: "
+13   + a + b + c
+14 fin funcion obtenerOperacion
+
+15 Fin 
